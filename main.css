@@ -1,0 +1,186 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('athuluth.ttf');
+}
+
+@font-face {
+    font-family: mashrafe;
+    src: url('Mashrafe.ttf');
+}
+
+@font-face {
+    font-family: SabrenaTonnyMJ;
+    src: url('SabrenaTonnyMJ.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./vintage-wallpaper.png');
+    color: white;
+}
+
+#header_section {
+    background: url(./background.jpg);
+    background-size: cover;
+    height: 95vh;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.heading h2 {
+    font-family: myFirstFont;
+    font-size: 40px;
+    padding-bottom: 0;
+    margin-top: 0;
+}
+
+.heading h1 {
+    font-family: mashrafe;
+    font-size: 70px;
+}
+
+#rest {
+    display: flex;
+    text-align: center;
+}
+
+#tables {
+    flex: 1;
+    margin-right: 35px;
+    margin-left: 10px;
+    font-family: SabrenaTonnyMJ;
+}
+
+#essentials {
+    flex: 1;
+    margin-top: 65px;
+}
+
+td {
+    height: 30px;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+#tables h1,
+#table-1 h1 {
+    font-size: 24px;
+    background: #00695C;
+    overflow: auto;
+    padding: 10px 0;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+table {
+    width: 60%;
+    margin: auto;
+}
+
+th {
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+th {
+    background-color: #880E4F;
+    color: white;
+}
+
+#timing {
+    display: flex;
+    padding: 0px;
+}
+
+#timing div {
+    flex: 1;
+}
+
+#countdown {
+    width: 40%;
+    margin: auto;
+    font-family: SabrenaTonnyMJ;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.box-3>p,
+.box-1>p,
+.box-2>p {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.box-1 {
+    overflow: auto;
+    background: #6a63636b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-2 {
+    overflow: auto;
+    background: #6a63636b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.box-3 {
+    overflow: auto;
+    background: #6a63636b;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.dowa {
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #rest {
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    #essentials {
+        margin-top: 0 width: 100vw;
+    }
+    .dowa {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #tables {
+        margin-right: 0;
+        margin-left: 0;
+        margin: auto;
+        width: 100vw;
+    }
+    th,
+    td {
+        padding: 2px 3px;
+        font-size: 12px;
+    }
+}
